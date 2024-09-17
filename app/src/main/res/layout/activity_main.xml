@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nomeEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_goneMarginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:inputType="textPersonName"
+        android:hint="@string/Nome"
+
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idadeEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/Idade"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/nomeEdit"
+        app:layout_constraintStart_toStartOf="@+id/nomeEdit"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <EditText
+        android:id="@+id/pesoEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="@string/Peso"
+        android:inputType="numberDecimal"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/idadeEdit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idadeEdit"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <EditText
+        android:id="@+id/alturaEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:hint="@string/Altura"
+        android:inputType="numberDecimal"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/pesoEdit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pesoEdit"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <Button
+        android:id="@+id/calcularbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Calcular"
+
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <TextView
+        android:id="@+id/resultadoIMC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        tools:text="@string/Resultado"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/calcularbutton"
+        app:layout_constraintStart_toStartOf="@+id/calcularbutton"
+        tools:layout_editor_absoluteY="472dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
